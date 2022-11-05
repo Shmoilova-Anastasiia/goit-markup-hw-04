@@ -123,31 +123,50 @@
     .list-header{
     display: flex;
     margin-left: auto;
-    text-align: center;
+   align-items: center;
+
     }
     
     .list-header-item:not(:first-child){
-    margin-left: 50px;  
+        margin-left: 50px;  
     }
     .list-header-item{
-        display: block;   
-        padding-top: 32px;
-    padding-bottom: 32px;
+        display: block; 
+        align-items: center; 
     }
     
     .link-auth {
+    display: flex;   
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    gap: 10px; 
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.02em;
     color: var(--text-color-paragraf);
     }
+    .auth-icon{
+        fill:currentColor;
+    }
+    .telefon-icon{
+        fill:currentColor;
+    }
     
     /*------------HERO-----------*/
     .hero{
+        height: 600px;
+        max-width: 1600px;
+        margin: 0 auto;
         padding-top: 200px;
         padding-bottom: 200px;
-        background: var(--frame-color);   
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/background/img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--frame-color);   
     }
     .hero-side {
         text-align: center;
@@ -213,6 +232,17 @@
     .list-item-feature:not(:first-child){
     margin-left: 30px;
     }
+.feauture-icon{
+    display: flex;
+    width: 270px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+background-color: #F5F4FA;
+margin-bottom: 30px;
+align-items: center;
+justify-content: center;
+}
+
     .item-title-feature {
     margin-bottom: 10px;
 
@@ -287,6 +317,21 @@
     letter-spacing: 0.03em;
     color: var(--text-color-paragraf); 
     }
+    .icon-instagram{
+        fill:#FFFFFF;
+    }
+    /* -------CLIENT------ */
+.list-client{
+    display: flex;
+}
+.list-item-client{
+    width: 170px;
+padding: 16px 32px;
+
+    border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+
     /*-----FOOTER---------*/
     .footer{
     background: var(--frame-color);
